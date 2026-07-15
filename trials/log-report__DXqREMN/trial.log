@@ -1,4 +1,4 @@
-Skipping image OS validation for hb__a7767d177f9bc3cae1cdd2d6de388e27: docker inspect returned 1
+Skipping image OS validation for hb__45e954e5f07aa877097ad279a2461be7: docker inspect returned 1
 Collecting main service artifacts
 Failed to download artifact '/app/out.json' from service 'main' (best-effort)
 Traceback (most recent call last):
@@ -18,7 +18,6 @@ Traceback (most recent call last):
     raise RuntimeError(
     ...<5 lines>...
     )
-RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__dnmrph2__env --project-directory C:\Users\redsaucepasta\Desktop\handshake\log-report\environment -f C:\Users\redsaucepasta\AppData\Local\Temp\tmpv9zu89b_\log-report__dNMrpH2__env-docker-compose-resources.json -f C:\Users\redsaucepasta\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\redsaucepasta\AppData\Local\Temp\tmplqql1413\docker-compose-mounts.json cp main:/app/out.json trials\log-report__dNMrpH2\artifacts\app\out.json. Return code: 1. Stdout:  log-report__dnmrph2__env-main-1 Copying log-report__dnmrph2__env-main-1:/app/out.json to trials\log-report__dNMrpH2\artifacts\app\out.json
-Error response from daemon: Could not find the file /app/out.json in container e3875c73b06167676994ce545da344e00fc20012e28c68d06ec3202588e70d8d
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__dxqremn__env --project-directory C:\Users\redsaucepasta\Desktop\handshake\log-report\environment -f C:\Users\redsaucepasta\AppData\Local\Temp\tmpzuy3po1u\log-report__DXqREMN__env-docker-compose-resources.json -f C:\Users\redsaucepasta\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\redsaucepasta\AppData\Local\Temp\tmpjliqipgy\docker-compose-mounts.json cp main:/app/out.json trials\log-report__DXqREMN\artifacts\app\out.json. Return code: 1. Stdout:  log-report__dxqremn__env-main-1 Copying log-report__dxqremn__env-main-1:/app/out.json to trials\log-report__DXqREMN\artifacts\app\out.json
+Error response from daemon: Could not find the file /app/out.json in container 3706a9b849eb2be124962493cff8dd7710a93a9331bdd56d57b0e61b011b79a6
 . Stderr: None. 
-Trial log-report__dNMrpH2 failed: No reward file found at trials\log-report__dNMrpH2\verifier\reward.txt or trials\log-report__dNMrpH2\verifier\reward.json

@@ -11,17 +11,17 @@
             "skipped": 0,
             "pending": 0,
             "other": 0,
-            "start": 1784129957.9069858,
-            "stop": 1784129957.9625266
+            "start": 1784130595.7190359,
+            "stop": 1784130595.7593627
         },
         "tests": [
             {
                 "name": "test_outputs.py::test_report_exists",
                 "status": "failed",
                 "raw_status": "call_failed",
-                "duration": 0.000783327000000611,
-                "start": 1784129957.9286077,
-                "stop": 1784129957.9398146,
+                "duration": 0.0008647359999258697,
+                "start": 1784130595.72937,
+                "stop": 1784130595.7422667,
                 "retries": 0,
                 "file_path": "test_outputs.py",
                 "trace": "def test_report_exists():\n        \"\"\"The agent produced a report file.\"\"\"\n>       assert Path(\"/app/report.json\").exists(), \"no report.json found\"\nE       AssertionError: no report.json found\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/report.json').exists\nE        +      where PosixPath('/app/report.json') = Path('/app/report.json')\n\n/tests/test_outputs.py:6: AssertionError",
@@ -31,12 +31,12 @@
                 "name": "test_outputs.py::test_report_nonempty",
                 "status": "failed",
                 "raw_status": "call_failed",
-                "duration": 0.000665722999990237,
-                "start": 1784129957.9401407,
-                "stop": 1784129957.9614828,
+                "duration": 0.0006012260000716196,
+                "start": 1784130595.7425108,
+                "stop": 1784130595.7587094,
                 "retries": 0,
                 "file_path": "test_outputs.py",
-                "trace": "def test_report_nonempty():\n        \"\"\"The report file is not empty.\"\"\"\n>       assert Path(\"/app/report.json\").stat().st_size > 0, \"report.json is empty\"\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/report.json')\n\n    def stat(self, *, follow_symlinks=True):\n        \"\"\"\n        Return the result of the stat() system call on this path, like\n        os.stat() does.\n        \"\"\"\n>       return os.stat(self, follow_symlinks=follow_symlinks)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/report.json'\n\n/usr/local/lib/python3.14/pathlib/__init__.py:654: FileNotFoundError",
+                "trace": "def test_report_nonempty():\n        \"\"\"The report file is not empty.\"\"\"\n>       assert Path(\"/app/report.json\").stat().st_size > 0, \"report.json is empty\"\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:11: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/report.json')\n\n    def stat(self, *, follow_symlinks=True):\n        \"\"\"\n        Return the result of the stat() system call on this path, like\n        os.stat() does.\n        \"\"\"\n>       return os.stat(self, follow_symlinks=follow_symlinks)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/report.json'\n\n/usr/local/lib/python3.11/pathlib.py:1013: FileNotFoundError",
                 "message": "The test failed in the call phase"
             }
         ]

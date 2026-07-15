@@ -1,4 +1,4 @@
-Skipping image OS validation for hb__fa70f858e36328c8de4b22c89773a5cc: docker inspect returned 1
+Skipping image OS validation for hb__45e954e5f07aa877097ad279a2461be7: docker inspect returned 1
 Collecting main service artifacts
 Failed to download artifact '/app/out.json' from service 'main' (best-effort)
 Traceback (most recent call last):
@@ -18,6 +18,6 @@ Traceback (most recent call last):
     raise RuntimeError(
     ...<5 lines>...
     )
-RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__ajqv374__env --project-directory C:\Users\redsaucepasta\Desktop\handshake\log-report\environment -f C:\Users\redsaucepasta\AppData\Local\Temp\tmpk8n00emr\log-report__aJqV374__env-docker-compose-resources.json -f C:\Users\redsaucepasta\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\redsaucepasta\AppData\Local\Temp\tmpgubyedjy\docker-compose-mounts.json cp main:/app/out.json trials\log-report__aJqV374\artifacts\app\out.json. Return code: 1. Stdout:  log-report__ajqv374__env-main-1 Copying log-report__ajqv374__env-main-1:/app/out.json to trials\log-report__aJqV374\artifacts\app\out.json
-Error response from daemon: Could not find the file /app/out.json in container eae3a9ea46138b8f87f68be39adb4a2dfc3e82b72c08ce8fe63418f4c4a2b2af
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__at6ruzp__env --project-directory C:\Users\redsaucepasta\Desktop\handshake\log-report\environment -f C:\Users\redsaucepasta\AppData\Local\Temp\tmp_u2iar9d\log-report__At6rUZP__env-docker-compose-resources.json -f C:\Users\redsaucepasta\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\environments\docker\docker-compose-build.yaml -f C:\Users\redsaucepasta\AppData\Local\Temp\tmp011ncnem\docker-compose-mounts.json cp main:/app/out.json trials\log-report__At6rUZP\artifacts\app\out.json. Return code: 1. Stdout:  log-report__at6ruzp__env-main-1 Copying log-report__at6ruzp__env-main-1:/app/out.json to trials\log-report__At6rUZP\artifacts\app\out.json
+Error response from daemon: Could not find the file /app/out.json in container 482b17f8d169f09ff346c3cb7562b049be51e7fb4ca1e00b9bccbf976b79de95
 . Stderr: None. 
