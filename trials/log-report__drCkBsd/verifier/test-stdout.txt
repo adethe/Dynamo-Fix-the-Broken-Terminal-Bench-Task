@@ -1,0 +1,37 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.12, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 1 item
+
+../tests/test_outputs.py F                                               [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_report_values ______________________________
+
+    def test_report_values():
+        report_path = Path("/app/report.json")
+        assert report_path.exists(), "no report.json found"
+    
+        with open(report_path, "r") as f:
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError:
+                assert False, "report.json is not valid JSON"
+    
+        expected = get_expected_metrics()
+    
+        assert "total_requests" in data, "Missing 'total_requests' key"
+        assert "unique_ips" in data, "Missing 'unique_ips' key"
+        assert "top_path" in data, "Missing 'top_path' key"
+    
+>       assert (
+            data["total_requests"] == expected["total_requests"]
+        ), f"Incorrect total_requests. Got {data['total_requests']}, expected {expected['total_requests']}"
+E       AssertionError: Incorrect total_requests. Got 99205, expected 6
+E       assert 99205 == 6
+
+/tests/test_outputs.py:60: AssertionError
+=========================== short test summary info ============================
+FAILED ../tests/test_outputs.py::test_report_values - AssertionError: Incorre...
+============================== 1 failed in 0.03s ===============================

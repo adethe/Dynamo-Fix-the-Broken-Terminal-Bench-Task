@@ -28,3 +28,14 @@ with open("/app/report.json", "w") as out:
         out,
     )
 print("wrote /app/report.json")
+
+# with open("/app/report.json", "w") as out:
+#     json.dump(
+#         {
+#             "total_requests": total + 99199,  #intentionally wrong count
+#             "unique_ips": len(ips),
+#             "top_path": paths.most_common(1)[0][0],
+#         },
+#         out,
+#     )
+# print("wrote /app/report.json")
