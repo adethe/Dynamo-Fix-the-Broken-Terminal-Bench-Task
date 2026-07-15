@@ -1,0 +1,109 @@
+{
+    "id": "747751b4-7e5a-4a6a-b324-2ca02c39f619",
+    "task_name": "dynamo/log-report",
+    "trial_name": "log-report__dNMrpH2",
+    "trial_uri": "file:///C:/Users/redsaucepasta/Desktop/handshake/log-report/trials/log-report__dNMrpH2",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "09f8a142c5d89821f4a4dd39e9ab7d4abd582a9deb1215b8735a9bd642b5a85d",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "log-report__dNMrpH2",
+        "trials_dir": "trials",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "nop",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "nop",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at trials\\log-report__dNMrpH2\\verifier\\reward.txt or trials\\log-report__dNMrpH2\\verifier\\reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 353, in run\n    await self._run()\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 52, in _run\n    await self._run_verifier()\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 105, in _run_verifier\n    self.result.verifier_result = await self._run_shared_verifier(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 527, in _run_shared_verifier\n    return await asyncio.wait_for(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n        verifier.verify(), timeout=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\python\\cpython-3.13.14-windows-x86_64-none\\Lib\\asyncio\\tasks.py\", line 507, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"C:\\Users\\redsaucepasta\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\verifier\\verifier.py\", line 232, in verify\n    raise RewardFileNotFoundError(\n    ...<3 lines>...\n    )\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at trials\\log-report__dNMrpH2\\verifier\\reward.txt or trials\\log-report__dNMrpH2\\verifier\\reward.json\n",
+        "occurred_at": "2026-07-15T10:19:29.744924"
+    },
+    "started_at": "2026-07-15T15:18:38.096725Z",
+    "finished_at": "2026-07-15T15:19:40.520284Z",
+    "environment_setup": {
+        "started_at": "2026-07-15T15:18:38.436079Z",
+        "finished_at": "2026-07-15T15:19:28.031173Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-15T15:19:28.031232Z",
+        "finished_at": "2026-07-15T15:19:28.031308Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-15T15:19:28.031383Z",
+        "finished_at": "2026-07-15T15:19:28.031471Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-15T15:19:28.400535Z",
+        "finished_at": "2026-07-15T15:19:29.730291Z"
+    },
+    "step_results": null
+}
